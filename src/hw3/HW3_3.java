@@ -1,14 +1,12 @@
-package hw2;
+package hw3;
 
 import java.util.Scanner;
 
-public class HW2_3 {
+public class HW3_3 {
 //	阿文很喜歡簽大樂透(1～49)，但他是個善變的人，上次討厭數字是4，但這次他想要依心情決定討
 //	厭哪個數字，請您設計一隻程式，讓阿文可以輸入他不想要的數字(1～9)，畫面會顯示他可以選擇
 //	的號碼與總數，如圖：
 	public static void main(String[] args) {
-		// 阿文很熱衷大樂透(1 ～ 49)，但他不喜歡有4的數字，不論是個位數或是十位數。
-		// 請設計一隻程式，輸出結果為阿文可以選擇的數字有哪些？總共有幾個？
 		Scanner sc = new Scanner(System.in);
 		int num = 0, p = 0;
 		System.out.println("請輸入1 ~ 9的正整數");
