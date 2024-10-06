@@ -32,5 +32,38 @@ public class HW3_3 {
 		}
 		System.out.println();
 		System.out.println("總共有" + p + "個");
+//		(進階挑戰：輸入不要的數字後，直接亂數印出6個號碼且不得重複)
+		int[] xd = new int[p];
+		int n1, n2, n3, n4, n5, n6;
+		int index = 0;
+		for (int i = 1; i <= 49; i++) {
+            if (i % 10 != num && i / 10 != num) {
+                xd[index++] = i;
+            }
+        }
+		
+		n1 = (int) (Math.random() * p);
+		do {
+			n2 = (int) (Math.random() * p) + 1;
+		} while (n2 == n1);
+		do {
+			n3 = (int) (Math.random() * p) + 1;
+		} while ((n3 == n2) || (n3 == n1));
+		do {
+			n4 = (int) (Math.random() * p) + 1;
+		} while ((n4 == n3) || (n4 == n2) || (n4 == n1));
+		do {
+			n5 = (int) (Math.random() * p) + 1;
+		} while ((n5 == n4) || (n5 == n3) || (n5 == n2) || (n5 == n1));
+		do {
+			n6 = (int) (Math.random() * p) + 1;
+		} while ((n6 == n5) || (n6 == n4) || (n6 == n3) || (n6 == n2) || (n6 == n1));
+		System.out.println("隨機抽六個數");
+		System.out.print(xd[n1] + " ");
+		System.out.print(xd[n2] + " ");
+		System.out.print(xd[n3] + " ");
+		System.out.print(xd[n4] + " ");
+		System.out.print(xd[n5] + " ");
+		System.out.print(xd[n6]);
 	}
 }
