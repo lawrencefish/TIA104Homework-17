@@ -14,7 +14,7 @@ public class CalTest {
 		}
 		int x = sc.nextInt();
 		System.out.println(x);
-		
+
 		System.out.println("請輸入y");
 		while (!sc.hasNextInt()) {
 			System.out.println("輸入格式不正確，請重新輸入y");
